@@ -1,0 +1,97 @@
+html{
+	box-sizing: border-box;
+}
+*,
+*::after,
+*::before{
+	box-sizing: inherit;
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	background-color: var(--color-4);
+
+}
+
+:root{
+	--color-1: rgba(77,7,7,0.9);
+	--color-2: rgba(7,7,77,0.9);
+	--color-3: rgba(7,0,37,0.7);
+	--color-4: rgba(7,23,137,0.6);
+	--bloody: #ff0f1f;
+	--mary: #000f10 ;
+
+}
+.section-center{
+	
+	width: 100%;
+	display: grid;
+
+	justify-content: center;
+	
+}
+
+h3{
+	padding-bottom: 15px;
+	text-transform: uppercase;
+}
+
+.wrapper{
+
+	padding: 70px 40px 10px 40px;
+	background-color: rgba(255,225,255, 0.7);
+	margin-top: 50px;
+	text-align: center;
+	border-radius: 7px;
+
+}
+.todo-container{
+	visibility: hidden;
+	
+
+}
+.todo-container.active{
+	visibility: visible;
+	
+
+}
+.todo-item{
+	padding-top: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+#list{
+	padding: 4px;
+	background-color: rgba(20,30,40, 0.3);
+	
+}
+.btn-submit{
+	padding: 7px;
+	background-color: #1ffcc1;
+	font-size: 20px;
+	color: #fff;
+	text-shadow: -1px 2px 4px #000;
+
+}
+
+.clear-btn{
+	padding: 4px;
+	background-color: var(--bloody);
+	font-size: 14px;
+	color: var(--mary);
+	color: #fff;
+	text-shadow: 1px 2px 4px #000;
+	
+}
+
+.alert-danger{
+	background-color: rgb(166,2,6);
+}
+
+.alert-nodanger{
+	background-color: rgb(6,166,6);
+}

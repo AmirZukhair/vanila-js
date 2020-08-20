@@ -1,0 +1,100 @@
+html{
+	box-sizing: border-box;
+}
+*,
+*::after,
+*::before{
+	box-sizing: inherit;
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	
+
+}
+
+:root{
+	--color-1: rgba(77,7,7,0.9);
+	--color-2: rgba(7,7,77,0.9);
+	--color-3: rgba(7,0,37,0.7);
+	--bloody: #ff0f1f;
+	--mary: #000f10 ;
+
+}
+
+.container{
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+.gift-info{
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	background-color: rgba(7,0,37,0.2);
+}
+.gift-inner{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-items: center;
+}
+
+h2{
+	padding-bottom: 15px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: var(--color-2);
+
+}
+
+.lottery{
+	padding-bottom: 20px;
+	word-spacing: 4px;
+	
+}
+p{
+	padding-bottom: 40px;
+}
+
+.deadline{
+	display: flex;
+	justify-content: space-around;
+	
+}
+.deadline-item{
+     letter-spacing: 2px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 70px;
+	width: 70px;
+	text-align: center;
+	background-color: var(--color-2);
+	
+	color: rgb(230,255,240);
+}
+.deadline-item h4{
+	font-size: 25px;
+}
+
+
+@media(max-width: 1000px){
+	.gift-inner{
+	
+	
+	grid-template-columns: 1fr;
+	grid-gap: 2vw;
+ }
+ .content-gift{
+ 	max-width: 600px;
+ }
+ .lottery-photo img{
+ 	max-width: 100%;
+    height: auto;
+ }
+}
+

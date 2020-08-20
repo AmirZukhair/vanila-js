@@ -1,0 +1,119 @@
+html{
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+	box-sizing: inherit;
+	padding: 0;
+	margin: 0;
+}
+
+:root{
+	--color: #1ffcf1;
+}
+body{
+	background-color: var(--color);
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size: 18px;
+}
+
+
+.wrapper{
+	height: 100vh;
+	width: 100%;
+	background-image: url(img/bg-marvel.jpg);
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+}
+
+.content{
+   padding: 30px;
+   border-radius: 20px;
+   background-color: #fff;
+}
+
+.title{
+   font-size: 50px;
+   font-weight: 700;
+   padding-bottom: 25px;
+}
+
+.btn-modal{
+	background-color: rgba(139,2,4, 0.7);
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 10px 15px;
+	border-radius: 4px;
+	border: 1px solid #000;
+	cursor: pointer;
+
+}
+
+.btn-modal:hover{
+		background-color: rgba(169,20,40, 0.7);
+
+}
+
+
+.modal-overlay{
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+
+	background-color: rgba(255,255,255,0.4);
+	display: grid;
+	place-items: center;
+	transition: background-color 3s;
+	visibility: hidden;
+	z-index: -10;
+
+
+}
+
+.modal-overlay.show-modal{
+	visibility: visible;
+	z-index: 10;
+
+}
+
+.modal-container{
+	background-color: #fff;
+	padding: 40px;
+	position: relative;
+	background-color: rgba(178,3,44,0.7);
+}
+
+.modal-container img{
+	height: auto;
+}
+
+.close-btn{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 2px;
+
+}
+i{
+	font-size: 24px;
+	transition: all 0.4s;
+}
+
+i:hover{
+	transform: rotate(180deg) scale(1.2);
+
+	color: red;
+}
+
